@@ -1,13 +1,17 @@
 name: deploy
-on: [push]
+on:
+ - push
+ - workflow_dispatch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      pages: write
+      id-token: write
       deployments: write
-    name: Deploy to Cloudflare Pages
+    name: Deploy to GH Pages
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,11 +27,13 @@ jobs:
       - name: Build book
         run: mdbook build
 
-      - name: Publish
-        uses: cloudflare/pages-action@v1.4.0
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: foundry-book
-          directory: book
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          # Upload entire repository
+          path: 'book'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
