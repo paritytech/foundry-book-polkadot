@@ -28,7 +28,7 @@ $ forge build
 Compiler run successful!
 ```
 
-Let's [test](https://book.getfoundry.sh/forge/tests#tests) our contracts:
+Let's [test](https://paritytech.github.io/foundry-book-polkadot/forge/tests#tests) our contracts:
 
 ```sh
 $ forge test

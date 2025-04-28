@@ -10,7 +10,7 @@ Foundry manages your dependencies, compiles your project, runs tests, deploys, a
 
 > 📖 **Contributing**
 >
-> You can contribute to this book on [GitHub](https://github.com/foundry-rs/book).
+> You can contribute to this book on [GitHub](https://github.com/paritytech/foundry-book-polkadot).
 
 ### Sections
 
@@ -49,6 +49,7 @@ Guides on configuring Foundry.
 - [Static Analyzers](./config/static-analyzers.md)
 - [Integrating with Hardhat](./config/hardhat.md)
 - [Vyper support](./config/vyper.md)
+- [Resolc support](./config/resolc.md)
 
 **Guides**
 

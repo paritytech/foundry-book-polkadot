@@ -314,4 +314,4 @@ This program is a set of tools to interact with Ethereum and perform conversions
 
 ### BUGS
 
-See <https://github.com/foundry-rs/foundry/issues> for issues.
+See <https://github.com/paritytech/foundry-polkadot/issues> for issues.

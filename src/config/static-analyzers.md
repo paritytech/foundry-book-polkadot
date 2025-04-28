@@ -24,7 +24,7 @@ To run Slither on a single file, use this command:
 slither src/Contract.sol
 ```
 
-Note, this requires configuring the [solc version in the foundry config file](https://book.getfoundry.sh/reference/config/solidity-compiler#solc_version).
+Note, this requires configuring the [solc version in the foundry config file](https://paritytech.github.io/foundry-book-polkadot/reference/config/solidity-compiler#solc_version).
 
 You do not need to provide remappings via the `solc_remaps` option as Slither will automatically detect remappings in a Foundry project. Slither will invoke `forge` to perform the build.
 
