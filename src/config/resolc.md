@@ -17,18 +17,18 @@ resolc = "path/to/resolc"
   - valid values follow the SemVer format `x.y.z-dev.n`, `resolc:x.y.z-dev.n`
   - path `path/to/resolc`.
 
-### 3. Deploying
+### 2. Deploying
 
 You can deploy Solidity contracts via `forge create` command:
 ```bash
 forge create --resolc --legacy --broadcast --rpc-url $RPC_URL --private-key $PRIVATE_KEY  <path to the contract> --constructor-args '1' 
 ```
 
-### 4. Solidity scripts
+### 3. Solidity scripts
 
 Currently not supported 
 
-### 5. Limitations
+### 4. Limitations
 
 - [Working forge commands](https://github.com/paritytech/foundry-polkadot/issues/54#issuecomment-2695723499)
 - [Working cast commands](https://github.com/paritytech/foundry-polkadot/issues/57#issuecomment-2699458251) 
