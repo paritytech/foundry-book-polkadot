@@ -19,7 +19,7 @@ resolc = "path/to/resolc"
 
 ### 3. Deploying
 
-You can deploy Vyper contracts via `forge create` command:
+You can deploy Solidity contracts via `forge create` command:
 ```bash
 forge create --resolc --legacy --broadcast --rpc-url $RPC_URL --private-key $PRIVATE_KEY  <path to the contract> --constructor-args '1' 
 ```
