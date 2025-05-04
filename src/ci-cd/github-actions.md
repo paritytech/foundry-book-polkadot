@@ -92,7 +92,7 @@ Then, locate the "Management" section, and click on "Caches". You will see a lis
 
 #### Fuzzing
 
-Note that if you are fuzzing in your fork tests, the RPC cache strategy above will not work unless you set a [fuzz seed](https://book.getfoundry.sh/reference/config/testing#seed). You might also want to reduce your number of RPC calls by using [Multicall](https://github.com/mds1/multicall).
+Note that if you are fuzzing in your fork tests, the RPC cache strategy above will not work unless you set a [fuzz seed](https://paritytech.github.io/foundry-book-polkadot/reference/config/testing#seed). You might also want to reduce your number of RPC calls by using [Multicall](https://github.com/mds1/multicall).
 
 ### Summaries
 

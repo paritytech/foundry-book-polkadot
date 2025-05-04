@@ -63,6 +63,7 @@
 - [Static Analyzers](./config/static-analyzers.md)
 - [Integrating with Hardhat](./config/hardhat.md)
 - [Vyper support](./config/vyper.md)
+- [Resolc support](./config/resolc.md)
 
 # Guides
 
@@ -233,6 +234,11 @@
       - [`cast to-utf8`](./reference/cli/cast/to-utf8.md)
       - [`cast to-wei`](./reference/cli/cast/to-wei.md)
       - [`cast tx`](./reference/cli/cast/tx.md)
+      - [`cast tx-pool`](./reference/cli/cast/tx-pool.md)
+        - [`cast tx-pool content`](./reference/cli/cast/tx-pool/content.md)
+        - [`cast tx-pool content-from`](./reference/cli/cast/tx-pool/content-from.md)
+        - [`cast tx-pool inspect`](./reference/cli/cast/tx-pool/inspect.md)
+        - [`cast tx-pool status`](./reference/cli/cast/tx-pool/status.md)
       - [`cast upload-signature`](./reference/cli/cast/upload-signature.md)
       - [`cast wallet`](./reference/cli/cast/wallet.md)
         - [`cast wallet new`](./reference/cli/cast/wallet/new.md)
@@ -246,7 +252,9 @@
         - [`cast wallet list`](./reference/cli/cast/wallet/list.md)
         - [`cast wallet remove`](./reference/cli/cast/wallet/remove.md)
         - [`cast wallet private-key`](./reference/cli/cast/wallet/private-key.md)
+        - [`cast wallet public-key`](./reference/cli/cast/wallet/public-key.md)
         - [`cast wallet decrypt-keystore`](./reference/cli/cast/wallet/decrypt-keystore.md)
+        - [`cast wallet change-password`](./reference/cli/cast/wallet/change-password.md)
     - [`anvil`](./reference/cli/anvil.md)
       - [`anvil completions`](./reference/cli/anvil/completions.md)
       - [`anvil generate-fig-spec`](./reference/cli/anvil/generate-fig-spec.md)

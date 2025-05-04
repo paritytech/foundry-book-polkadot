@@ -1,38 +1,34 @@
-# cast wallet list
+# cast wallet change-password
 
-List all the accounts in the keystore default directory
+Change the password of a keystore file
 
 ```bash
-$ cast wallet list --help
+$ cast wallet change-password --help
 ```
 
 ```txt
-Usage: cast wallet list [OPTIONS]
+Usage: cast wallet change-password [OPTIONS] <ACCOUNT_NAME>
+
+Arguments:
+  <ACCOUNT_NAME>
+          The name for the account in the keystore
 
 Options:
-      --dir [<DIR>]
-          List all the accounts in the keystore directory. Default keystore
-          directory is used if no path provided
+  -k, --keystore-dir <KEYSTORE_DIR>
+          If not provided, keystore will try to be located at the default
+          keystores directory (~/.foundry/keystores)
 
-  -l, --ledger
-          List accounts from a Ledger hardware wallet
-
-  -t, --trezor
-          List accounts from a Trezor hardware wallet
-
-      --aws
-          List accounts from AWS KMS
-
-      --gcp
-          List accounts from Google Cloud KMS
-
-      --all
-          List all configured accounts
-
-  -m, --max-senders <MAX_SENDERS>
-          Max number of addresses to display from hardware wallets
+      --unsafe-password <PASSWORD>
+          Current password for the JSON keystore in cleartext This is unsafe, we
+          recommend using the default hidden password prompt
           
-          [default: 3]
+          [env: CAST_UNSAFE_PASSWORD=]
+
+      --unsafe-new-password <NEW_PASSWORD>
+          New password for the JSON keystore in cleartext This is unsafe, we
+          recommend using the default hidden password prompt
+          
+          [env: CAST_UNSAFE_NEW_PASSWORD=]
 
   -h, --help
           Print help (see a summary with '-h')

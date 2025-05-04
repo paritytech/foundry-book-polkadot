@@ -20,7 +20,7 @@ If you are running Foundry's **latest nightly build** you may encounter the foll
 [FAIL: call didn't revert at a lower depth than cheatcode call depth]
 ```
 
-Please read [here](https://book.getfoundry.sh/cheatcodes/expect-revert#error) for more information.
+Please read [here](https://paritytech.github.io/foundry-book-polkadot/cheatcodes/expect-revert#error) for more information.
 
 ## Releases
 

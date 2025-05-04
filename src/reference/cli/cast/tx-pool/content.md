@@ -1,48 +1,15 @@
-# cast run
+# cast tx-pool content
 
-Runs a published transaction in a local environment and prints the trace
+Fetches the content of the transaction pool
 
 ```bash
-$ cast run --help
+$ cast tx-pool content --help
 ```
 
 ```txt
-Usage: cast run [OPTIONS] <TX_HASH>
-
-Arguments:
-  <TX_HASH>
-          The transaction hash
+Usage: cast tx-pool content [OPTIONS]
 
 Options:
-  -d, --debug
-          Opens the transaction in the debugger
-
-      --decode-internal
-          Whether to identify internal functions in traces
-
-  -t, --trace-printer
-          Print out opcode traces
-
-      --quick
-          Executes the transaction only with the state from the previous block.
-          
-          May result in different results than the live execution!
-
-  -l, --label <LABEL>
-          Label addresses in the trace.
-          
-          Example: 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045:vitalik.eth
-
-  -e, --etherscan-api-key <KEY>
-          The Etherscan (or equivalent) API key
-          
-          [env: ETHERSCAN_API_KEY=]
-
-  -c, --chain <CHAIN>
-          The chain name or EIP-155 chain ID
-          
-          [env: CHAIN=]
-
   -r, --rpc-url <URL>
           The RPC endpoint, default value is http://localhost:8545
           
@@ -85,41 +52,6 @@ Options:
           Specify custom headers for RPC requests
           
           [env: ETH_RPC_HEADERS=]
-
-      --evm-version <EVM_VERSION>
-          The EVM version to use.
-          
-          Overrides the version specified in the config.
-
-      --compute-units-per-second <CUPS>
-          Sets the number of assumed available compute units per second for this
-          provider
-          
-          default value: 330
-          
-          See also,
-          <https://docs.alchemy.com/reference/compute-units#what-are-cups-compute-units-per-second>
-
-      --no-rate-limit
-          Disables rate limiting for this node's provider.
-          
-          default value: false
-          
-          See also,
-          <https://docs.alchemy.com/reference/compute-units#what-are-cups-compute-units-per-second>
-          
-          [aliases: no-rpc-rate-limit]
-
-      --odyssey
-          Enables Odyssey features
-
-      --with-local-artifacts
-          Use current project artifacts for trace decoding
-          
-          [aliases: la]
-
-      --disable-block-gas-limit
-          Disable block gas limit check
 
   -h, --help
           Print help (see a summary with '-h')

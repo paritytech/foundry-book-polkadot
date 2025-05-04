@@ -22,7 +22,10 @@ Commands:
                     [aliases: ls]
   remove            Remove a wallet from the keystore [aliases: rm]
   private-key       Derives private key from mnemonic [aliases: pk]
+  public-key        Get the public key for the given private key [aliases:
+                    pubkey]
   decrypt-keystore  Decrypt a keystore file to get the private key [aliases: dk]
+  change-password   Change the password of a keystore file [aliases: cp]
   help              Print this message or the help of the given subcommand(s)
 
 Options:

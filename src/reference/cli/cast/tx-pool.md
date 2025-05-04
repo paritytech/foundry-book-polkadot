@@ -1,39 +1,23 @@
-# cast wallet list
+# cast tx-pool
 
-List all the accounts in the keystore default directory
+Inspect the TxPool of a node
 
 ```bash
-$ cast wallet list --help
+$ cast tx-pool --help
 ```
 
 ```txt
-Usage: cast wallet list [OPTIONS]
+Usage: cast tx-pool [OPTIONS] <COMMAND>
+
+Commands:
+  content       Fetches the content of the transaction pool
+  content-from  Fetches the content of the transaction pool filtered by a
+                specific address
+  inspect       Fetches a textual summary of each transaction in the pool
+  status        Fetches the current status of the transaction pool
+  help          Print this message or the help of the given subcommand(s)
 
 Options:
-      --dir [<DIR>]
-          List all the accounts in the keystore directory. Default keystore
-          directory is used if no path provided
-
-  -l, --ledger
-          List accounts from a Ledger hardware wallet
-
-  -t, --trezor
-          List accounts from a Trezor hardware wallet
-
-      --aws
-          List accounts from AWS KMS
-
-      --gcp
-          List accounts from Google Cloud KMS
-
-      --all
-          List all configured accounts
-
-  -m, --max-senders <MAX_SENDERS>
-          Max number of addresses to display from hardware wallets
-          
-          [default: 3]
-
   -h, --help
           Print help (see a summary with '-h')
 

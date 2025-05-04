@@ -38,6 +38,20 @@ Options:
           
           [default: 0.1.0]
 
+      --crate-description <DESCRIPTION>
+          The description of the Rust crate to generate.
+          
+          This will be added to the package.description field in Cargo.toml.
+          
+          [default: ]
+
+      --crate-license <LICENSE>
+          The license of the Rust crate to generate.
+          
+          This will be added to the package.license field in Cargo.toml.
+          
+          [default: ]
+
       --module
           Generate the bindings as a module instead of a crate
 
@@ -83,12 +97,11 @@ Build options:
       --no-cache
           Disable the cache
 
+      --dynamic-test-linking
+          Enable dynamic test linking
+
       --eof
-          Use EOF-enabled solc binary. Enables via-ir and sets EVM version to
-          Prague. Requires Docker to be installed.
-          
-          Note that this is a temporary solution until the EOF support is merged
-          into the main solc release.
+          Whether to compile contracts to EOF bytecode
 
       --skip <SKIP>...
           Skip building files whose names contain the given filter.
@@ -124,6 +137,9 @@ Compiler options:
 
       --via-ir
           Use the Yul intermediate representation compilation pipeline
+
+      --use-literal-content
+          Changes compilation to only use literal content and not URLs
 
       --no-metadata
           Do not append any metadata to the bytecode.

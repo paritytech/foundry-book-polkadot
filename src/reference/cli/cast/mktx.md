@@ -176,6 +176,11 @@ Wallet options - raw:
           
           [default: 0]
 
+      --raw-unsigned
+          Generate a raw RLP-encoded unsigned transaction.
+          
+          Relaxes the wallet requirement.
+
 Wallet options - keystore:
       --keystore <PATH>
           Use the keystore in the given folder or file
@@ -210,6 +215,9 @@ Wallet options - hardware wallet:
 Wallet options - remote:
       --aws
           Use AWS Key Management Service
+
+      --gcp
+          Use Google Cloud Key Management Service
 
 Display options:
       --color <COLOR>

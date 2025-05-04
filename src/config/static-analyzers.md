@@ -24,7 +24,7 @@ To run Slither on a single file, use this command:
 slither src/Contract.sol
 ```
 
-Note, this requires configuring the [solc version in the foundry config file](https://book.getfoundry.sh/reference/config/solidity-compiler#solc_version).
+Note, this requires configuring the [solc version in the foundry config file](https://paritytech.github.io/foundry-book-polkadot/reference/config/solidity-compiler#solc_version).
 
 You do not need to provide remappings via the `solc_remaps` option as Slither will automatically detect remappings in a Foundry project. Slither will invoke `forge` to perform the build.
 
@@ -52,6 +52,19 @@ Counter.sol analyzed (1 contracts with 78 detectors), 4 result(s) found
 ```
 
 Slither also has a [GitHub Action](https://github.com/marketplace/actions/slither-action) for CI/CD.
+
+### Aderyn
+
+To test your project using [aderyn](https://github.com/cyfrin/aderyn), install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Cyfrin.aderyn&ssr=false#overview) supported by Cyfrin.
+
+To run the tool manually, follow the [Quick Start](https://cyfrin.gitbook.io/cyfrin-docs/aderyn-cli/quickstart) example with video guide.
+
+```bash
+$ cd path/to/solidity/project/root
+$ aderyn
+```
+
+Explore more CLI options [here](https://cyfrin.gitbook.io/cyfrin-docs/cli-options).
 
 ### Mythril
 

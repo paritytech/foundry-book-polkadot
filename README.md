@@ -6,7 +6,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-A book on all things Foundry. [Read now](https://book.getfoundry.sh).
+A book on all things Foundry. [Read now](https://paritytech.github.io/foundry-book-polkadot).
 
 ### Contributing
 
