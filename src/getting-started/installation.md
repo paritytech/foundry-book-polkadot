@@ -13,7 +13,7 @@ Foundryup is the official installer for the Foundry toolchain. You can learn mor
 To install Foundryup, open your terminal and run the following command:
 
 ```sh
-curl -L https://raw.githubusercontent.com/paritytech/foundry-polkadot/refs/heads/master/foundryup/install | bash
+curl -L https://raw.githubusercontent.com/paritytech/foundry-polkadot/refs/tags/stable/foundryup/install | bash
 ```
 
 This will install Foundryup. Simply follow the on-screen instructions, and the `foundryup` command will become available in your CLI.
