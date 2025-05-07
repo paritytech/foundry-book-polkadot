@@ -45,6 +45,7 @@
 # Cast Overview
 
 - [Cast](./cast/README.md)
+  - [Supported Cast Command List](./cast/supported-cast-commands.md)
 
 # Anvil Overview
 
